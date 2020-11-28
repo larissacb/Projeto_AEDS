@@ -1,0 +1,3 @@
+Sala_1_Predio_Principal 20
+Sala_2_Predio_Principal 20
+Sala_3_Predio_Principal 44
