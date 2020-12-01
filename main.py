@@ -2,9 +2,6 @@ from turma import Turma
 from sala import Sala
 from TabelaHash import tabelaHash
 
-
-import random
-
 #============================================================================================================================================
 menu=False
 aux=list()
@@ -104,14 +101,12 @@ while (menu==True):
         #rodar toda a lista de turmas noturnas e comparar com a lista de salas para verificar qual delas tem a menor diferença de demanda e lotacao
         i=0
         for i in range(len(x)):
-            diferencaAnterior=0
+            diferencaAnterior=44
             salaAtual=0
             demanda = turmas[x[i]].get_num_alunos() #pego o valor corresponte ao numero de alunos de uma determinada turma de curso noturno
             for j in range(len(salas)): #percorrer a lista de salas
                 tamSala = salas[j].getLotacao()
                 diferenca = tamSala - demanda
-                
-                #AQUI NOS TEMOS UM GRANDE PROBLEMA!!!!
                 
                 if (diferenca < diferencaAnterior and diferenca>=0): #verifico se existe uma sala com a diferenca entre demanda e lotacao melhor que a encontrada em uma iteracao anterior e diferenca positiva
                     salaAtual=j #salvo qual e a posicao da sala que tem a menor diferenca entre a demanda e a lotacao
@@ -139,7 +134,7 @@ while (menu==True):
         #rodar toda a lista de turmas da manha e comparar com a lista de salas para verificar qual delas tem a menor diferença de demanda e lotacao
         i=0
         for i in range(len(x)):
-            diferencaAnterior=0
+            diferencaAnterior=44
             salaAtual=0
             demanda = turmas[x[i]].get_num_alunos() #pego o valor corresponte ao numero de alunos de uma determinada turma de horario na manha
             for j in range(len(salas)): #percorrer a lista de salas
@@ -174,7 +169,7 @@ while (menu==True):
         #rodar toda a lista de turmas da tarde e comparar com a lista de salas para verificar qual delas tem a menor diferença de demanda e lotacao
         i=0
         for i in range(len(x)):
-            diferencaAnterior=0
+            diferencaAnterior=44
             salaAtual=0
             demanda = turmas[x[i]].get_num_alunos() #pego o valor corresponte ao numero de alunos de uma determinada turma de horario na tarde
             for j in range(len(salas)): #percorrer a lista de salas
