@@ -25,31 +25,3 @@ class Sala:
 
     def addElemento(self, linha, coluna, elemento): #adiciono a turma em um horario da matriz dessa sala
         self.matriz_horarios[linha][coluna] = elemento
-
-    def imprimirDados(self):
-        print("Sala: ", self.nome)
-        for i in range(len(self.matriz_horarios)): #percorrendo as linhas da matriz
-            if i == 0:
-                print("====== Segunda-feira ======")
-            elif i == 1:
-                print("====== Terca-feira ======")
-            elif i == 2:
-                print("====== Quarta-feira ======")
-            elif i == 3:
-                print("====== Quinta-feira ======")
-            elif i == 4:
-                print("====== Sexta-feira ======")
-            elif i == 5:
-                print("====== Sabado ======")
-            for j in range(len(self.matriz_horarios[i])): #percorrendo as colunas da matriz
-                if j == 0:
-                    print("12M", self.matriz_horarios[i][j])
-            
-            
-
-
-        
-        
-        
-       
-        
