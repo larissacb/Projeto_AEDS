@@ -193,7 +193,6 @@ while (menu==True):
                     salas[salaAtual].addElemento(j, 5, turmas[x[i]]) #adiciono a turma nesse horario 
                     break #quebro o loop do j se a turma for add em um horario
         del x  
-        #DEPOIS VERIFICAR A QUESTAO DAS TURMAS QUE NAO FORAM ALOCADAS. GERAR UM ARQUIVO DE SAIDA COM ESSAS INFORMACOES
         i=0
         j=0
         k=0
